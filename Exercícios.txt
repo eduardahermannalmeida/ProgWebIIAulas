@@ -1,0 +1,10 @@
+1. Escreva um programa que mostre na tela a mensagem: "Olá, mundo!'
+2. Faça um programa que leia o nome de uma pessoa e de boas vindas. ex.: “Olá, Lucas!”
+3. Faça um programa que leia o nome do funcionário e seu salário e mostre uma mensagem como a do exemplo: O funcionário Lucas recebe R$2000,00 por mês.
+4. Desenvolva um algoritmo que leia dois números inteiros e mostre o somatório entre eles.
+5. Faça um programa que leia as duas notas de um aluno em uma matéria e mostre na tela a sua média na disciplina.
+6. Faça um programa que leia um número inteiro e mostre o seu antecessor e seu sucessor.
+7. Faça um algoritmo que leia quanto dinheiro uma pessoa tem na carteira (em R$) e mostre quantos dólares ela pode comprar. Considere US$1,00 = R$5,60.
+8. Faça um algoritmo que leia a largura e altura de uma parede e mostre a área a ser pintada e a quantidade de tinta necessária para o serviço, sabendo que cada litro de tinta pinta uma área de 2 metros quadrados.
+9. Crie um programa que leia o número de dias trabalhados em um mês e mostre o salário de um funcionário, sabendo que ele trabalha 8 horas por dia e ganha R$25 por hora trabalhada.
+10. Faça um algoritmo que leia o salário de um funcionário, calcule e mostre o seu novo salário, com 15% de aumento.
