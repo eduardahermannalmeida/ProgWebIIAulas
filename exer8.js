@@ -10,5 +10,6 @@ const rl = readline.createInterface({
 rl.question("SERVIÇO DE PINTURA\nInforme os dados da parede para ver quanta tinta será necessária para o serviço.\n - Largura: ", (l) =>{
     rl.question("- Altura: ", (a) =>{
         console.log(`A área da parede é de ${parseInt(a)*parseInt(l)}m², serão necessários ${((parseInt(a)*parseInt(l))/2).toFixed(2)}L de tinta para o serviço.`);
+        rl.close();
     })
 });

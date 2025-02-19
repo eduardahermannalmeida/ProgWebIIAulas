@@ -9,7 +9,7 @@ const rl = readline.createInterface({
 
 rl.question("- Qual é o nome do funcionário que deseja informar? \n", (nomefun) => {
     rl.question("- Certo, agora informe o salário do funcionário: \n", (sal) =>{
-    console.log(`RESULTADO\nOk, portanto o funcionário ${nomefun} recebe R$${sal} por mês.`)
+    console.log(`RESULTADO\nOk, portanto o funcionário ${nomefun} recebe R$${(parseInt(sal)).toFixed(2)} por mês.`)
     rl.close();
     })
 })

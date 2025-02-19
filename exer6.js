@@ -7,7 +7,7 @@ const rl = readline.createInterface({
     output: process.stdout,
 });
 
-rl.question("Infome um número: ", (num) =>{
-    console.log(`- Antecessor: ${parseInt(num) - 1}\n- Sucessor ${parseInt(num) + 1}`);
+rl.question("Olá! Direi qual o antecessor e sucessor de um número.\n- Infome um número: ", (num) =>{
+    console.log(`\nRESULTADO\n- Antecessor: ${parseInt(num) - 1}\n- Sucessor ${parseInt(num) + 1}`);
     rl.close();
 });
