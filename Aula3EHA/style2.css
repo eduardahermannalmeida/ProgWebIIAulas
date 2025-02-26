@@ -4,13 +4,6 @@
     box-sizing: border-box;
 }
 
-.thecontainer{
-    display: inline-block;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-}
-
 body{
     font-family: Arial, sans-serif;
     background-color: #f4f4f4;
@@ -84,22 +77,6 @@ li p{
     padding: 5px 10px;
     cursor: pointer;
     border-radius: 5px;
-}
-
-.edit{
-    background-color: rgb(40, 188, 233);
-    color: #fff;
-    position: absolute;
-    top: 45px;
-    right: 10px;
-    border: none;
-    padding: 5px 10px;
-    cursor: pointer;
-    border-radius: 5px;
-}
-
-.edit:hover{
-    background-color: rgb(53, 79, 126);
 }
 
 .delete:hover{

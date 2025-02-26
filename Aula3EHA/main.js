@@ -1,16 +1,25 @@
 document.addEventListener("DOMContentLoaded", carregarContatos);
 
 const formulario = document.getElementById("form-group");
+const botaoAdicionar = document.getElementById("addContato");
+
+let editarIndex = -1;
 
 formulario.addEventListener("submit", function (event) {
-  event.preventDefault(); //impedindo o refresh da página
-  adicionarContato();
+  event.preventDefault();
+  console.log("Evento submit detectado"); // Verifica se o evento está sendo chamado
+
+  if (editarIndex === -1) {
+    adicionarContato();
+  } else {
+    editarContato();
+  }
 });
 
 function adicionarContato() {
-  const nome = document.getElementById("nome").value;
-  const telefone = document.getElementById("telefone").value;
-  const email = document.getElementById("email").value;
+  const nome = document.getElementById("nome").value.trim();
+  const telefone = document.getElementById("telefone").value.trim();
+  const email = document.getElementById("email").value.trim();
 
   if (nome === "" || telefone === "" || email === "") {
     alert("Por favor, preencha todos os campos");
@@ -28,7 +37,6 @@ function salvarContato(contato) {
   let contatos = JSON.parse(localStorage.getItem("contatos")) || [];
   contatos.push(contato);
   localStorage.setItem("contatos", JSON.stringify(contatos));
-  carregarContatos();
 }
 
 function carregarContatos() {
@@ -44,31 +52,45 @@ function carregarContatos() {
         <p><strong>Nome:</strong> ${contato.nome}</p>
         <p><strong>Telefone:</strong> ${contato.telefone}</p>
         <p><strong>E-mail:</strong> ${contato.email}</p>
-        <button type="button" class="delete" onclick="removerContato(${index})"> ㄨ </button>
-        <button type="button" class="edit" onclick="abaEditarContato()">✎</button>
+        <button type="button" class="editar" onclick="editarForm(${index})">Editar</button>
+        <button type="button" class="delete" onclick="removerContato(${index})">X</button>
     `;
 
     lista.appendChild(li);
   });
 }
 
-function abaEditarContato(index) {
-  // Em progresso
-  const contato = contato[index];
-  const abaEdicao = document.getElementById("abaEdi");
+function editarForm(index) {
+  let contatos = JSON.parse(localStorage.getItem("contatos")) || [];
+  const contato = contatos[index];
 
-  abaEdicao.innerHTML = `
-  <form id="form-group">
-  <h4>Edição de Contato</h4>
-  <input type="text" id="nome" placeholder="Nome" value="${contato.nome}"/>
-  <input type="tel" id="telefone" placeholder="Telefone" value="${contato.telefone}"/>
-  <input type="email" id="email" placeholder="E-mail" value="${contato.email}"/>
-  <button type="button" class="editar" onclick="editarContato(${index})">Salvar Alterações</button>
-  </form>
-  `;
+  document.getElementById("nome").value = contato.nome;
+  document.getElementById("telefone").value = contato.telefone;
+  document.getElementById("email").value = contato.email;
 
-  abaEdicao.style.display = "block";
+  editarIndex = index;
+  botaoAdicionar.textContent = "Atualizar";
+}
 
+function editarContato() {
+  const nome = document.getElementById("nome").value.trim();
+  const telefone = document.getElementById("telefone").value.trim();
+  const email = document.getElementById("email").value.trim();
+
+  if (nome === "" || telefone === "" || email === "") {
+    alert("Por favor, preencha todos os campos");
+    return;
+  }
+
+  let contatos = JSON.parse(localStorage.getItem("contatos")) || [];
+  contatos[editarIndex] = { nome, telefone, email };
+  localStorage.setItem("contatos", JSON.stringify(contatos));
+
+  editarIndex = -1;
+  carregarContatos();
+
+  limparCampos();
+  botaoAdicionar.textContent = "Adicionar";
 }
 
 function removerContato(index) {
@@ -78,10 +100,8 @@ function removerContato(index) {
   carregarContatos();
 }
 
-function editarContato(index, nvNome, nvTelefone, nvEmail) {
-    // Em progresso
-  let contatos = JSON.parse(localStorage.getItem("contatos")) || [];
-  carregarContatos();
+function limparCampos() {
+  document.getElementById("nome").value = "";
+  document.getElementById("telefone").value = "";
+  document.getElementById("email").value = "";
 }
-
-
