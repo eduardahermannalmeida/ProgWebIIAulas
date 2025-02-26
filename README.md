@@ -1,2 +1,2 @@
-# ExerciciosJS
- Exercícios feitos em JavaScript.
+# ProgWebII
+Registro de exercícios feitos e conteúdo da aula.
