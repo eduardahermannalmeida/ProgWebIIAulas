@@ -45,11 +45,30 @@ function carregarContatos() {
         <p><strong>Telefone:</strong> ${contato.telefone}</p>
         <p><strong>E-mail:</strong> ${contato.email}</p>
         <button type="button" class="delete" onclick="removerContato(${index})"> ㄨ </button>
-        <button type="button" class="edit" onclick="editarContato(${index})">✎</button>
+        <button type="button" class="edit" onclick="abaEditarContato()">✎</button>
     `;
 
     lista.appendChild(li);
   });
+}
+
+function abaEditarContato(index) {
+  // Em progresso
+  const contato = contato[index];
+  const abaEdicao = document.getElementById("abaEdi");
+
+  abaEdicao.innerHTML = `
+  <form id="form-group">
+  <h4>Edição de Contato</h4>
+  <input type="text" id="nome" placeholder="Nome" value="${contato.nome}"/>
+  <input type="tel" id="telefone" placeholder="Telefone" value="${contato.telefone}"/>
+  <input type="email" id="email" placeholder="E-mail" value="${contato.email}"/>
+  <button type="button" class="editar" onclick="editarContato(${index})">Salvar Alterações</button>
+  </form>
+  `;
+
+  abaEdicao.style.display = "block";
+
 }
 
 function removerContato(index) {
@@ -59,13 +78,10 @@ function removerContato(index) {
   carregarContatos();
 }
 
-function editarContato(index){
-
-    //li.innerHTML = `
-    //<h4>Edição de Contato</h4>
-    //<p><strong>Nome:</strong> ${contato.nome}</p>
-    //<p><strong>Telefone:</strong> ${contato.telefone}</p>
-    //<p><strong>E-mail:</strong> ${contato.email}</p>
-    //<button type="button" class="editar" onclick="editarContato(${index})">Salvar Alterações</button>
-//`;
+function editarContato(index, nvNome, nvTelefone, nvEmail) {
+    // Em progresso
+  let contatos = JSON.parse(localStorage.getItem("contatos")) || [];
+  carregarContatos();
 }
+
+
