@@ -1,0 +1,18 @@
+#superelipse {
+    width: 133px;
+    height: 34px;
+    color: #0f172a;
+    background-color: #fba94c;
+    border-radius: 6px;
+    font-size: 12px;
+    font-weight: 700;
+    padding: 8px 16px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    justify-self: center;
+    position: relative;
+    margin-top: 95px;
+    z-index: 10;
+  }

@@ -1,23 +1,18 @@
-import "./interfaceStyle.css";
-import { Card, Button, List } from "./components/card";
+import { Card } from "./components/card";
+import { Button } from "./components/button";
+import { List } from "./components/list";
+import { Sign } from "./components/sign"
 
 export function App() {
   return (
     <>
-      <div class="miniContainer">
-        <h1 id="superelipse"> MAIS VANTAJOSO </h1>
-      </div>
-      <div className="cardContainer">
-        <Card description="PARA VOCÊ DECOLAR" title="Ultimate" price="29,97" />
-        <Button title="Assinar agora" />
-        <hr />
-        <List
-          item1="Usuários ilimitados"
-          item2="Suporte 24/7"
-          item3="CSM Dedicado"
-          item4="Treinamentos"
-        />
-      </div>
+      <Card
+        description="PARA VOCÊ DECOLAR"
+        title="Ultimate"
+        price="29,97"
+        darkmode
+      />
+      
     </>
   );
 }
