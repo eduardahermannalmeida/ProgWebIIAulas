@@ -3,7 +3,7 @@
   border-radius: 10px;
   padding: 48px 32px 32px 32px;
   background-color:#E2E8F0;
-  border: 1px solid #e2e8f0;
+  border: solid 1px #E2E8F0;
   position: absolute;
   top: 50%;
   left: 50%;
@@ -11,7 +11,7 @@
 }
 
 .darkContainer {
-  background-color: #0f172a;
+  background-color: #0F172A;;
   border: none;
 }
 
@@ -20,8 +20,12 @@
   align-items: center;
 }
 
-.titleAndPrice {
+.darkContainer h1, span, p{
   color: #f8fafc;
+}
+
+.titleAndPrice {
+  color: #334155;
   display: flex;
   align-items: center;
   justify-content: space-between;
@@ -54,21 +58,15 @@
   font-weight: 700;
 }
 
-.signNow {
-  width: 320px;
-  height: 56px;
-  background-color: #996dff;
-  border-radius: 4px;
-  font-size: 16px;
-  font-weight: 700;
-  margin-top: 32px;
-}
-
 hr {
-  background-color: #334155;
+  background-color: #E2E8F0;
   height: 1px;
   width: 320px;
   border: none;
   margin-top: 32px;
   margin-bottom: 32px;
+}
+
+.darkContainer hr{
+  background-color: #334155;
 }

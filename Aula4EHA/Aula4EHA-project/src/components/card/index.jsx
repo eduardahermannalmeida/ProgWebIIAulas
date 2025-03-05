@@ -1,11 +1,9 @@
 import "./styles.css";
 import { Button } from "../button/";
-import { List } from "../list/";
-import { Sign } from "../sign/";
+import { List } from "../list";
 
-export function Card({ description, title, price, darkmode }) {
+export function Card({ description, title, price, darkmode = false}) {
   return (
-    <Sign title="MAIS VANTAJOSO"/>>
     <div className={`cardContainer ${darkmode ? "darkContainer" : ""}`}>
       <p id="label">{description}</p>
 
@@ -17,14 +15,14 @@ export function Card({ description, title, price, darkmode }) {
           <span id="period">/mês</span>
         </p>
       </div>
+
       <Button title="Assinar agora" />
       <hr />
-        <List
-          item1="Usuários ilimitados"
-          item2="Suporte 24/7"
-          item3="CSM Dedicado"
-          item4="Treinamentos"
-        /> 
+      <List
+        item1="Usuários ilimitados"
+        item2="Suporte 24/7"
+        item3="CSM Dedicado"
+        item4="Treinamentos" />
     </div>
   );
 }

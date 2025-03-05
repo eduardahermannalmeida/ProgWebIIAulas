@@ -1,9 +1,13 @@
 .signNow {
   width: 320px;
   height: 56px;
-  background-color: #996dff;
-  border: none;
+  background-color: #FFFFFF;
+  border: 1px solid #1E293B;
   border-radius: 4px;
   font-size: 16px;
   font-weight: 700;
+  margin-top: 32px;
+}
+.darkContainer button{
+  background-color: #996dff;
 }
