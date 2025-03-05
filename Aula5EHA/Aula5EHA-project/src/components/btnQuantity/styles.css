@@ -1,0 +1,10 @@
+.btnQuantity {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+button {
+  border-style: none;
+  height: 38px;
+}
