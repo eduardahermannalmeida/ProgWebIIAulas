@@ -2,7 +2,7 @@ import "./styles.css";
 import { Button } from "../button/";
 import { List } from "../list";
 
-export function Card({ description, title, price, darkmode = false}) {
+export function Card({ description, title, price, darkmode = false, items=[], buttonText="Assinar Agora", cifrao="R$ ", period="/mês"}) {
   return (
     <div className={`cardContainer ${darkmode ? "darkContainer" : ""}`}>
       <p id="label">{description}</p>
@@ -10,19 +10,16 @@ export function Card({ description, title, price, darkmode = false}) {
       <div className="titleAndPrice">
         <h1 id="plan"> {title} </h1>
         <p id="price">
-          <span id="cifrao">R$ </span>
+          <span id="cifrao">{cifrao}</span>
           {price}
-          <span id="period">/mês</span>
+          <span id="period">{period}</span>
         </p>
       </div>
 
-      <Button title="Assinar agora" />
+      <Button title={buttonText} />
       <hr />
       <List
-        item1="Usuários ilimitados"
-        item2="Suporte 24/7"
-        item3="CSM Dedicado"
-        item4="Treinamentos" />
+        items={items}/>
     </div>
   );
 }

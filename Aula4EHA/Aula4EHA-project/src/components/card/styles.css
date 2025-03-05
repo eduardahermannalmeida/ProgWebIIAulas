@@ -1,8 +1,9 @@
 .cardContainer {
   width: 384px;
+  height: 484px;
   border-radius: 10px;
   padding: 48px 32px 32px 32px;
-  background-color:#E2E8F0;
+  background-color:#FFFFFF;
   border: solid 1px #E2E8F0;
   position: absolute;
   top: 50%;
@@ -20,12 +21,13 @@
   align-items: center;
 }
 
-.darkContainer h1, span, p{
+
+.darkContainer .titleAndPrice{
   color: #f8fafc;
 }
 
 .titleAndPrice {
-  color: #334155;
+  color: #1E293B;
   display: flex;
   align-items: center;
   justify-content: space-between;
