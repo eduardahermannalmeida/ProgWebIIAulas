@@ -1,10 +1,10 @@
 import "./styles.css";
-import { ShoppingCart } from "lucide-react";
+import { ShoppingCart, ShoppingCartIcon } from "lucide-react";
 
 export function BtnBuy() {
   return (
     <button type="Button" id="btnBuy">
-      <ShoppingCart size={32} id="cartIcon"/>
+      <ShoppingCartIcon size={32} id="cartIcon"/>
     </button>
   );
 }

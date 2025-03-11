@@ -1,10 +1,27 @@
 .btnQuantity {
+  width: 72px;
+  height: 38px;
   display: flex;
   align-items: center;
   justify-content: space-between;
+  font-family: "Roboto", sans-serif;
+  font-weight: 400px;
+  font-size: 16px;
+  background-color: #E6E5E5;
+  border-radius: 6px;
+  padding: 8px;
+  gap: 4px;
 }
 
 button {
   border-style: none;
   height: 38px;
+  background-color: #E6E5E5;
+  color: #8047F8;
+  font-size: 20px;
+}
+
+p{
+  color: #272221;
+  font-size: 16px;
 }

@@ -2,12 +2,17 @@
   width: 256px;
   height: 310px;
   border-radius: 10px;
-  padding: 6px 36px 6px 36px;
-  background-color: #ffffff;
+  padding: 6px 20px 6px 20px;
+  background-color: #F3F2F2;
   border: solid 1px #e2e8f0;
   display: flex;
   flex-direction: column;
   align-items: center;
+  border-bottom: 2px;
+  border-top-left-radius: 6px;
+  border-top-right-radius: 36px;
+  border-bottom-right-radius: 6px;
+  border-bottom-left-radius: 36px;
 }
 
 #superelipse{
@@ -17,21 +22,43 @@
     background-color: #F1E9C9;
     border-radius: 100px;
     padding: 4px 8px;
+    font-family: "Roboto", sans-serif;
+    margin-top: auto;
+    margin-bottom: 5px;
 }
 
 #title {
     color: #403937;
     font-weight: 700px;
     font-size: 20px;
+    font-family: "Baloo 2", sans-serif;
+    margin-bottom: 5px;
 }
 
 #description {
     color: #8D8686;
     font-weight: 400px;
     font-size: 14px;
+    font-family: sans-serif;
+    margin-bottom: 30px;
+    
 }
 
 .purchaseArea{
     display: flex;
     gap: 10px;
+    font-family: "Baloo 2", sans-serif;
+    margin-bottom: 6px;
+}
+
+#price{
+    color:#574F4D;
+    font-size: 24px;
+    font-weight: 800px;
+}
+
+#cifrao{
+    color:#574F4D;
+    font-weight: 400px;
+    font-size: 14px;
 }

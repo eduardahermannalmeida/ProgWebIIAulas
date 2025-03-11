@@ -1,0 +1,11 @@
+#btnBuy{
+    color: #F3F2F2;
+    background-color: #4B2995;
+    border-radius: 6px;
+    padding: 8px;
+    gap: 8px;
+    width: 38px;
+    height: 38px;
+    display: flex;
+    align-items: center;
+}

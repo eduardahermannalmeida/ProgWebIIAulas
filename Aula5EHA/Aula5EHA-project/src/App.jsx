@@ -7,6 +7,7 @@ title,
 description,
 price,
  */
+
 export function App() {
   return (<CoffeeCard 
   img="src/components/img/CoffeeImg.png"
