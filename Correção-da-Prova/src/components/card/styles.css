@@ -1,0 +1,102 @@
+#card {
+  width: 100%;
+  max-width: 256px;
+  height: 310px;
+  background-color: #f3f2f2;
+  border-radius: 6px 36px 6px 36px;
+  position: relative;
+
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.coffeeImg {
+  position: absolute;
+  top: -20px;
+}
+
+#tags {
+  display: flex;
+  align-items: center;
+  gap: 4px;
+  text-transform: uppercase;
+
+  margin-top: 100px;
+  margin-bottom: 16px;
+}
+
+#tags span {
+  padding: 4px 8px;
+  border-radius: 100px;
+  color: #c47f17;
+  background-color: #f1e9c9;
+  font-size: 10px;
+  font-weight: bold;
+}
+
+h1 {
+  font-size: 20px;
+  font-weight: bold;
+  font-family: var(--baloo);
+  color: #403937;
+  margin-bottom: 8px;
+}
+
+.description {
+  font-size: 14px;
+  color: #8d8686;
+  text-align: center;
+  width: 100%;
+  max-width: 216px;
+  margin-bottom: 33px;
+}
+
+#details {
+  display: flex;
+  align-items: center;
+}
+
+#details span {
+  font-size: 14px;
+  color: #574f4d;
+}
+
+#details span strong {
+  color: #574f4d;
+  font-size: 24px;
+  font-family: var(--baloo);
+  font-weight: 800;
+}
+
+.quantityButtons {
+  display: flex;
+  align-items: center;
+  gap: 3.5px;
+  border-radius: 6px;
+  background-color: #e6e5e5;
+  padding: 8.5px 8px;
+  margin-left: 23px;
+  margin-right: 8px;
+}
+
+.quantityButtons button {
+  border: none;
+  background-color: transparent;
+  cursor: pointer;
+  font-size: 20px;
+  color: #8047f8;
+}
+
+.quantityButtons p {
+  font-size: 16px;
+  color: #272221;
+}
+
+.cartBtn {
+  border: none;
+  cursor: pointer;
+  padding: 8px;
+  background-color: #4b2995;
+  border-radius: 6px;
+}
