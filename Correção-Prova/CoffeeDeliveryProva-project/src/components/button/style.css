@@ -1,0 +1,48 @@
+#details {
+  display: flex;
+  align-items: center;
+  color: var(--base-text);
+}
+
+#details span {
+  font-size: 14px;
+  font: var(--text-s);
+}
+
+#details span strong {
+  font: var(--title-m);
+  font-size: 24px;
+  font-weight: 800;
+}
+
+.quantityButtons {
+  display: flex;
+  align-items: center;
+  gap: 3.5px;
+  border-radius: 6px;
+  background-color: #e6e5e5;
+  padding: 8.5px 8px;
+  margin-left: 23px;
+  margin-right: 8px;
+}
+
+.quantityButtons button {
+  border: none;
+  background-color: transparent;
+  cursor: pointer;
+  font-size: 20px;
+  color: var(--purple);
+}
+
+.quantityButtons p {
+  font-size: 16px;
+  color: #272221;
+}
+
+.cardBtn {
+  border: none;
+  cursor: pointer;
+  padding: 8px;
+  background-color: var(--purple-dark);
+  border-radius: 6px;
+}
