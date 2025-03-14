@@ -1,0 +1,52 @@
+
+.card {
+  background-color: var(--base-card);
+  width: 100%;
+  max-width: 256px;
+  height: 310px;
+  border-radius: 6px 36px 6px 36px;
+  position: relative;
+
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+#coffeeImage {
+  position: absolute;
+  top: -20px;
+}
+
+.tags {
+  display: flex;
+  align-items: center;
+  gap: 4px;
+  text-transform: uppercase;
+
+  margin-top: 100px;
+  margin-bottom: 16px;
+}
+
+.tags span {
+  font: var(--tag);
+  color: var(--base-subtitle);
+  padding: 4px 8px;
+  border-radius: 100px;
+  color: var(--yellow-dark);
+  background-color: var(--yellow-light);
+}
+
+#title {
+  font: var(--title-s);
+  color: var(--base-subtitle);
+  margin-bottom: 8px;
+}
+
+#description {
+  font: var(--button-g);
+  color: var(--base-label);
+  text-align: center;
+  width: 100%;
+  max-width: 216px;
+  margin-bottom: 33px;
+}
