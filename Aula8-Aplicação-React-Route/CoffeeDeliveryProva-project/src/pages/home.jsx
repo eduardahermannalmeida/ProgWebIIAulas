@@ -1,6 +1,5 @@
 import { ShoppingCart, Timer, Package, Coffee } from "lucide-react";
 import coffeeImg from "../assets/coffee.svg";
-import { Header } from "../components/header";
 import { Card } from "../components/card";
 import data from "../../data.json";
 
@@ -8,7 +7,6 @@ export function Home() {
 
   return (
     <>
-      <Header />
       <main>
         <div id="content">
           <h1>Encontre o café perfeito para qualquer hora do dia</h1>
