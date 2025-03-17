@@ -1,0 +1,49 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+:root {
+
+  /* Style Guide*/
+  
+  /* Cores */
+
+  /* Dark Mode */
+
+  /* Text */
+  --text-color-dark-mode: #FFFFFF;
+  /* Stroke */
+  --stroke-color-dark-mode: #FFFFFF 50%;
+  /* Surface */
+  --surface-color-dark-mode: #FFFFFF 10%;
+  --surface-color-dark-mode-hover: #FFFFFF 5%;
+  /* Highlight */
+  --highlight-color-dark-mode: #FFFFFF 20%    ;
+
+    /* Light Mode */
+
+  /* Text */
+  --text-color-light-mode: #000000;
+  /* Stroke */
+  --stroke-color-light-mode: #000000 50%;
+  /* Surface */
+  --surface-color-light-mode: #000000 5%;
+  --surface-color-light-mode-hover: #000000 2%;
+  /* Highlight */
+  --highlight-color-light-mode: #000000 10%;
+
+  /* Tipografia */
+  --inter: "Inter", sans-serif;
+  --text-md: 500 16px var(--inter);
+  --text-sm: 400 14px var(--inter);
+}
+
+.light {
+  background: radial-gradient(circle at 50% 50%, #FFFFFF 0%, #FCE4EC 30%, #E1BEE7 70%);
+}
+
+.dark {
+  background: radial-gradient(circle at 50% 50%, #1A0025 0%, #0A0012 50%, #000000 100%);
+}

@@ -1,0 +1,46 @@
+.container {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    width: 588px;
+    height: 712px;
+    padding: 24px;
+    transform: translate(60%, 0%);
+  }
+
+  .linkBtns {
+    display: flex;
+    flex-direction: column;
+    gap: 16px;
+    margin-top: 24px;
+    margin-bottom: 59px;
+  }
+
+  .linkBtns button {
+    font: var(--text-md);
+    width: 540px;
+    height: 56px;
+    border-radius: 8px;
+  }
+  
+  .userInfo p {
+    font: var(--text-md);  
+    font-weight: 400;    
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-bottom: 13.5px;
+  }
+
+  #pfpIcon {
+    margin-bottom: 9px;
+  }
+
+  .socials{
+    display: flex;
+    flex-direction: block;
+    gap: 26.5px;
+
+  }
+
