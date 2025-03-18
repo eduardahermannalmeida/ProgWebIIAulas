@@ -6,7 +6,6 @@
     width: 588px;
     height: 712px;
     padding: 24px;
-    transform: translate(60%, 0%);
   }
 
   .linkBtns {
@@ -35,6 +34,7 @@
 
   #pfpIcon {
     margin-bottom: 9px;
+    border-radius: 100%;
   }
 
   .socials{
