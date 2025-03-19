@@ -1,10 +1,9 @@
 import "./styles.css";
-import profileImg from "../images/profilepic.jpg";
-import { Github, Youtube, Instagram, Linkedin } from "lucide-react";
-import { useTheme } from "../context/ThemeContext";
+import profileImg from "../assets/images/profilepic.jpg";
+import { Github, Youtube, Instagram, Linkedin, MoonStar } from "lucide-react";
 
 export function DevLinks() {
-  const { toggleTheme } = useTheme();
+
   return (
     <div className="container">
       <div className="userInfo">
@@ -18,10 +17,11 @@ export function DevLinks() {
         <p> @maykbrito </p>
       </div>
 
-      <label class="switch">
-        <input type="checkbox" onClick={() => toggleTheme()} />
-        <span class="slider round"></span>
-      </label>
+      <div className="togggle-container">
+        <label className="toggle-switch">
+          <MoonStar size={16} />
+        </label>
+      </div>
 
       <div className="linkBtns">
         <button type="button"> Inscreva-se no NLW </button>
@@ -31,10 +31,18 @@ export function DevLinks() {
       </div>
 
       <div className="socials">
-        <Github />
-        <Instagram />
-        <Youtube />
-        <Linkedin />
+        <a href="https://github.com" target="_blank">
+          <Github />
+        </a>
+        <a href="https://www.instagram.com" target="_blank">
+          <Instagram />
+        </a>
+        <a href="https://www.youtube.com" target="_blank">
+          <Youtube />
+        </a>
+        <a href="https://www.linkedin.com" target="_blank">
+          <Linkedin />
+        </a>
       </div>
     </div>
   );

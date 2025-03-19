@@ -41,8 +41,12 @@
 }
 
 .light {
-  background: url("./images/bg-desktop-light.jpg");
+  background: url("../src/assets/images/bg-desktop-light.jpg");
   background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center;
+  width: 100vw;
+  height: 100vh;
   display: flex;
   justify-content: center;
   align-items: center;
@@ -51,8 +55,12 @@
 }
 
 .dark {
-  background: url("./images/bg-desktop.jpg");
+  background: url("../src/assets/images/bg-desktop.jpg");
   background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center;
+  width: 100vw;
+  height: 100vh;
   display: flex;
   justify-content: center;
   align-items: center;
@@ -106,3 +114,5 @@
 .light #pfpIcon{
   border: 2px solid var(--stroke-color-light-mode);
 }
+
+
