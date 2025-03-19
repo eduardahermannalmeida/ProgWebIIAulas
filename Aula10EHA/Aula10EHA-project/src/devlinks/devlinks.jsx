@@ -18,9 +18,10 @@ export function DevLinks() {
         <p> @maykbrito </p>
       </div>
 
-      <button type="button" onClick={toggleTheme}>
-        Toggle Theme
-      </button>
+      <label class="switch">
+        <input type="checkbox" onClick={() => toggleTheme()} />
+        <span class="slider round"></span>
+      </label>
 
       <div className="linkBtns">
         <button type="button"> Inscreva-se no NLW </button>

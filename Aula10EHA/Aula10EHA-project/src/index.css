@@ -41,7 +41,8 @@
 }
 
 .light {
-  background: radial-gradient(circle at 50% 50%, #FFFFFF 0%, #FCE4EC 30%, #E1BEE7 70%);
+  background: url("./images/bg-desktop-light.jpg");
+  background-size: cover;
   display: flex;
   justify-content: center;
   align-items: center;
@@ -50,7 +51,8 @@
 }
 
 .dark {
-  background: radial-gradient(circle at 50% 50%, #1A0025 0%, #0A0012 50%, #000000 100%);
+  background: url("./images/bg-desktop.jpg");
+  background-size: cover;
   display: flex;
   justify-content: center;
   align-items: center;
@@ -72,10 +74,21 @@
   border: 1px solid var(--stroke-color-light-mode);
 }
 
+.light .linkBtns button:hover{
+  background-color: var(--surface-color-light-mode-hover);
+  border: 2px solid var(--stroke-color-light-mode);
+}
+
+
 .dark .linkBtns button{
   color: var(--text-color-dark-mode);
   background-color: var(--surface-color-dark-mode);
   border: 1px solid var(--stroke-color-dark-mode);
+}
+
+.dark .linkBtns button:hover{
+  background-color: var(--surface-color-dark-mode-hover);
+  border: 2px solid var(--stroke-color-dark-mode);
 }
 
 .light .socials {
@@ -93,38 +106,3 @@
 .light #pfpIcon{
   border: 2px solid var(--stroke-color-light-mode);
 }
-
-/* .linkBtns {
-  display: flex;
-  flex-direction: column;
-  gap: 16px;
-  margin-top: 24px;
-  margin-bottom: 59px;
-}
-
-.linkBtns button {
-  font: var(--text-md);
-  width: 540px;
-  height: 56px;
-  border-radius: 8px;
-}
-
-.userInfo p {
-  font: var(--text-md);  
-  font-weight: 400;    
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  margin-bottom: 13.5px;
-}
-
-#pfpIcon {
-  margin-bottom: 9px;
-}
-
-.socials{
-  display: flex;
-  flex-direction: block;
-  gap: 26.5px;
-
-} */
