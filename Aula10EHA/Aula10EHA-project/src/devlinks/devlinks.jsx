@@ -51,16 +51,16 @@ export function DevLinks() {
 
       <div className="socials">
         <a href="https://github.com/eduardahermannalmeida" target="_blank">
-          <Github />
+          <Github size={24}/>
         </a>
         <a href="https://www.instagram.com" target="_blank">
-          <Instagram />
+          <Instagram size={24}/>
         </a>
         <a href="https://www.youtube.com" target="_blank">
-          <Youtube />
+          <Youtube size={24}/>
         </a>
         <a href="https://www.linkedin.com" target="_blank">
-          <Linkedin />
+          <Linkedin size={24}/>
         </a>
       </div>
     </div>

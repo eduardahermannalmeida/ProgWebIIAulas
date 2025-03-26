@@ -19,7 +19,6 @@
   display: flex;
   flex-direction: column;
   gap: 16px;
-  margin-top: 24px;
   margin-bottom: 59px;
 }
 
@@ -40,7 +39,7 @@
 .userInfo p {
   font: var(--text-md);
   font-weight: 400;
-  margin-bottom: 13.5px;
+  
 }
 
 #pfpIcon {
