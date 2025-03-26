@@ -5,15 +5,14 @@
 }
 
 :root {
-
   /* Style Guide*/
-  
+
   /* Cores */
 
   /* Dark Mode */
 
   /* Text */
-  --text-color-dark-mode: #FFFFFF;
+  --text-color-dark-mode: #ffffff;
   /* Stroke */
   --stroke-color-dark-mode: rgba(255, 255, 255, 0.5);
   /* Surface */
@@ -22,12 +21,12 @@
   /* Highlight */
   --highlight-color-dark-mode: rgba(255, 255, 255, 0.2);
 
-    /* Light Mode */
+  /* Light Mode */
 
   /* Text */
   --text-color-light-mode: #000000;
   /* Stroke */
-  --stroke-color-light-mode: rgba(0, 0, 0, 0.5); 
+  --stroke-color-light-mode: rgba(0, 0, 0, 0.5);
   /* Surface */
   --surface-color-light-mode: rgba(0, 0, 0, 0.05);
   --surface-color-light-mode-hover: rgba(0, 0, 0, 0.02);
@@ -42,59 +41,42 @@
 
 .light {
   background: url("../src/assets/images/bg-desktop-light.jpg");
-  background-size: cover;
-  background-repeat: no-repeat;
-  background-position: center;
-  width: 100vw;
-  height: 100vh;
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  min-height: 100vh;
-  margin: 0;
 }
 
 .dark {
   background: url("../src/assets/images/bg-desktop.jpg");
-  background-size: cover;
-  background-repeat: no-repeat;
-  background-position: center;
-  width: 100vw;
-  height: 100vh;
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  min-height: 100vh;
-  margin: 0;
 }
 
-.light .userInfo p{
+.light .userInfo p {
   color: var(--text-color-light-mode);
 }
 
-.dark .userInfo p{
+.dark .userInfo p {
   color: var(--text-color-dark-mode);
 }
 
-.light .linkBtns button{
+.linkBtns button:hover {
+  cursor: pointer;
+}
+
+.light .linkBtns button {
   color: var(--text-color-light-mode);
   background-color: var(--surface-color-light-mode);
   border: 1px solid var(--stroke-color-light-mode);
 }
 
-.light .linkBtns button:hover{
+.light .linkBtns button:hover {
   background-color: var(--surface-color-light-mode-hover);
   border: 2px solid var(--stroke-color-light-mode);
 }
 
-
-.dark .linkBtns button{
+.dark .linkBtns button {
   color: var(--text-color-dark-mode);
   background-color: var(--surface-color-dark-mode);
   border: 1px solid var(--stroke-color-dark-mode);
 }
 
-.dark .linkBtns button:hover{
+.dark .linkBtns button:hover {
   background-color: var(--surface-color-dark-mode-hover);
   border: 2px solid var(--stroke-color-dark-mode);
 }
@@ -107,12 +89,15 @@
   color: var(--text-color-dark-mode);
 }
 
-.dark #pfpIcon{
+.dark #pfpIcon {
   border: 2px solid var(--stroke-color-dark-mode);
 }
 
-.light #pfpIcon{
+.light #pfpIcon {
   border: 2px solid var(--stroke-color-light-mode);
 }
 
-
+.light .toggle-container{
+  border: 1px solid var(--stroke-color-light-mode);
+  background-color: var(--surface-color-light);
+}

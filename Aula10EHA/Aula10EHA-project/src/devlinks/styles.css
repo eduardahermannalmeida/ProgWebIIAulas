@@ -6,6 +6,13 @@
   width: 588px;
   height: 640px;
   padding: 24px;
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center;
+  width: 100vw;
+  height: 100vh;
+  min-height: 100vh;
+  margin: 0;
 }
 
 .linkBtns {
@@ -23,12 +30,16 @@
   border-radius: 8px;
 }
 
+.userInfo {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
 .userInfo p {
   font: var(--text-md);
   font-weight: 400;
-  display: flex;
-  justify-content: center;
-  align-items: center;
   margin-bottom: 13.5px;
 }
 
@@ -49,16 +60,15 @@
 }
 
 .toggle-container {
-  width: 64px;
+  width: 54px;
   height: 24px;
-  border: 1px solid var(--stroke-dark);
+  border: 1px solid var(--stroke-color-dark-mode);
   border-radius: 99px;
-  background-color: var(--surface-dark);
+  background-color: var(--surface-color-dark);
 
   display: flex;
   align-items: center;
   cursor: pointer;
-  padding: 8px;
   position: relative;
   transition: background-color 0.3s ease-in-out;
 
@@ -69,12 +79,18 @@
   width: 32px;
   height: 32px;
   border-radius: 50%;
-  background-color: var(--white);
+  background-color: var(--text-color-dark-mode);
   position: absolute;
+  top: 50%;
   transform: translateY(-50%);
+  left: -1px;
   display: flex;
   flex-direction: column;
   align-items: center;
   justify-content: center;
   transition: transform 0.3s ease-in-out;
+}
+
+.dark .toggle-switch {
+  transform: translateY(-50%) translateX(25px);
 }

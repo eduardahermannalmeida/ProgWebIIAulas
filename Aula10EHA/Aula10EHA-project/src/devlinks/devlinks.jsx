@@ -1,25 +1,44 @@
 import "./styles.css";
-import profileImg from "../assets/images/profilepic.jpg";
-import { Github, Youtube, Instagram, Linkedin, MoonStar } from "lucide-react";
+import { Github, Youtube, Instagram, Linkedin, MoonStar, Sun } from "lucide-react";
+import { api } from "../services/api";
+import { useEffect, useState } from "react";
+import { useTheme } from  "../context/ThemeContext";
 
 export function DevLinks() {
 
+  const { theme, toggleTheme } = useTheme();
+  const [user, setUser] = useState([]);
+
+  useEffect(() => {
+    async function getUserData() {
+      try {
+        const response = await api.get("/users/eduardahermannalmeida");
+
+        setUser(response.data);
+      } catch (error) {
+        console.log("Erro ao buscar os dados do usuário", error);
+      }
+    }
+
+    getUserData();
+  }, []);
+
   return (
-    <div className="container">
+    <div className={`container ${theme}`}>
       <div className="userInfo">
         <img
-          src={profileImg}
+          src={user.avatar_url}
           alt="Foto de Perfil"
           height="112px"
           width="112px"
           id="pfpIcon"
         />
-        <p> @maykbrito </p>
+        <p> @{user.login} </p>
       </div>
 
-      <div className="togggle-container">
+      <div className="toggle-container" onClick={toggleTheme}>
         <label className="toggle-switch">
-          <MoonStar size={16} />
+          {theme== "dark" ? <Sun size={16} /> : <MoonStar size={16} />}
         </label>
       </div>
 
@@ -31,7 +50,7 @@ export function DevLinks() {
       </div>
 
       <div className="socials">
-        <a href="https://github.com" target="_blank">
+        <a href="https://github.com/eduardahermannalmeida" target="_blank">
           <Github />
         </a>
         <a href="https://www.instagram.com" target="_blank">
