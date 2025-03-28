@@ -1,0 +1,134 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "Titillium Web", sans-serif;
+}
+
+:root {
+  --bg-color: #f8fafc;
+  --title-color: #1e293b;
+  --text-color: #475569;
+  --placeholder-color: #94a3b8;
+  --button-color: #7c3aed;
+}
+
+a {
+  text-decoration: none;
+  cursor: pointer;
+}
+
+a:hover{
+  text-decoration: underline;
+}
+
+button {
+  border: none;
+  outline: none;
+  cursor: pointer;
+}
+
+.container {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+}
+
+.s-form {
+  padding-top: 40px;
+  padding-left: 112px;
+
+  display: flex;
+  flex-direction: column;
+  align-items: start;
+}
+
+.content {
+  width: 100%;
+  max-width: 384px;
+}
+
+.title {
+  padding-top: 32px;
+  font-size: 36px;
+  font-weight: 700;
+  padding-bottom: 16px;
+}
+
+.description {
+  font-size: 16px;
+  color: var(--text-color);
+  padding-bottom: 40px;
+}
+
+form {
+  display: flex;
+  flex-direction: column;
+  gap: 8px;
+}
+
+label {
+  color: var(--title-color);
+  font-size: 14px;
+  font-weight: 600;
+}
+
+input {
+  padding: 16px 12px;
+  border-radius: 4px;
+  border: 1px solid #e2e8f0;
+  outline: none;
+}
+
+input::placeholder {
+  color: var(--placeholder-color);
+}
+
+input:focus,
+input:hover {
+  border-color: var(--button-color);
+}
+
+.s-forgot-password {
+  padding-top: 8px;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.s-forgot-password a {
+  font-size: 16px;
+  font-weight: 700;
+  color: var(--button-color);
+}
+
+.sign-in-btn{
+  padding: 16px 0;
+  border-radius: 4px;
+  color: #fff;
+  font-size: 16px;
+  font-weight: 700;
+  background-color: var(--button-color);
+  margin-top: 24px;
+}
+
+.sign-in-btn:hover{
+  background-color: #9F67FF;
+}
+
+.sign-up{
+  padding-top: 32px;
+  font-size: 16px;
+  color: var(--text-color);
+}
+
+.sign-up a{
+  font-size: 16px;
+  font-weight: 700;
+  color: var(--button-color);
+}
+
+.s-img {
+  background: url("./assets/background.png") center/cover;
+  flex: 1;
+  height: 100vh;
+}
