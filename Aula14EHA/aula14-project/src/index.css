@@ -127,6 +127,15 @@ input:hover {
   color: var(--button-color);
 }
 
+.error{
+  color: #ed4a5a;
+  font-size: 14px;
+}
+
+.input.error{
+  border-color: #ed4a5a;
+}
+
 .s-img {
   background: url("./assets/background.png") center/cover;
   flex: 1;
