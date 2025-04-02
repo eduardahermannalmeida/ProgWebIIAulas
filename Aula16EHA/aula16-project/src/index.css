@@ -1,0 +1,20 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: "Roboto", sans-serif;
+  }
+  
+  :root {
+    --green: #00875F;
+    --green-light: #00B37E;
+    --gray1: #121214; /* Background */
+    --gray2: #202024; /* Cards */
+    --gray3: #323238; /* Divider */
+    --gray4: #7C7C8A; /* Placeholder */
+    --gray5: #8D8D99; /* Text-Apoio */
+    --gray6: #C4C4CC; /* Text */
+    --gray7: #E1E1E6; /* Text-Time */
+    --white: #FFFFFF;
+    --red-danger: #F75A68;
+  }
