@@ -1,0 +1,33 @@
+.profile {
+  width: 100%;
+  max-width: 256px;
+  height: 294px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin: 0 auto;
+  background-color: var(--gray2);
+  border-radius: 8px;
+}
+
+.pfp {
+  position: relative;
+  top: -21px;
+  border: 2px solid var(--gray2);
+  border-radius: 8px;
+  outline: 2px solid var(--green-light);
+}
+
+.btn{
+    width: 192px;
+    height: 50px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 10px;
+    font: var(--names);
+    color: var(--green-light);
+    background: none;
+    border: 1px solid var(--green-light);
+    border-radius: 8px;
+}

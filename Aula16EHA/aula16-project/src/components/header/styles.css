@@ -1,0 +1,11 @@
+.flex{
+    background: var(--gray2);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 15.99px;
+    width: 100vw; 
+    height: 100px;
+    font: 700 25.59px/160%;
+    color: var(--gray7)
+}
