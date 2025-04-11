@@ -1,0 +1,57 @@
+form {
+  display: flex;
+  align-items: center;
+  gap: 0.5rem;
+
+  position: relative;
+  top: 4.6875rem; /* 75px */
+}
+
+input {
+  width: 38.625rem;
+
+  background: var(--gray-100);
+  border-radius: 8px;
+  border: 2px solid var(--gray-300);
+
+  outline: none;
+
+  padding: 0.9375rem 1.125rem;
+
+  font: var(--font-input);
+  color: var(--gray-600);
+}
+
+input::placeholder {
+  font: var(--font-input);
+  color: var(--gray-500);
+}
+
+input:focus {
+  border-color: var(--purple-base);
+  caret-color: var(--purple-base);
+}
+
+button {
+  border: none;
+  background: var(--purple-dark);
+  color: var(--gray-100);
+
+  padding: 1rem 1.5rem;
+
+  border-radius: 8px;
+
+  display: flex;
+  align-items: center;
+  gap: 0.5rem;
+
+  font: var(--font-button);
+
+  cursor: pointer;
+
+  transition: 0.3s background-color ease;
+}
+
+button:hover {
+  background: var(--purple-base);
+}
