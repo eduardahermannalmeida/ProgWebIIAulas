@@ -1,0 +1,34 @@
+{
+    "pizzas":[{
+        "id": 0,
+        "img": "/images/la-cuma.png",
+        "title": "La Cuma",
+        "description": "Lorem ipsum dolor sit amet, consectetur adipiscing elit.",
+        "price": "29,99"
+    
+    },
+    {
+        "id": 1,
+        "img": "/images/la-menta.png",
+        "title": "La Menta",
+        "description": "Lorem ipsum dolor sit amet, consectetur adipiscing elit.",
+        "price": "29,99"
+    
+    },
+    {
+        "id": 2,
+        "img": "/images/la-ripieno.png",
+        "title": "La Ripieno",
+        "description": "Lorem ipsum dolor sit amet, consectetur adipiscing elit.",
+        "price": "26,99"
+    
+    },
+    {
+        "id": 3,
+        "img": "/images/la-toca.png",
+        "title": "La Toca",
+        "description": "Lorem ipsum dolor sit amet, consectetur adipiscing elit.",
+        "price": "23,80"
+    
+    }]
+}
