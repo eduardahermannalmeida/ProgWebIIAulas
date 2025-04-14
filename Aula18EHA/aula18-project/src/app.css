@@ -1,0 +1,57 @@
+.todo-list {
+  padding-top: 18.1875rem;
+
+  display: grid;
+  align-items: center;
+  margin: 0 auto;
+
+  width: 100%;
+  max-width: 736px;
+}
+
+.header {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  flex: 1;
+}
+
+.created-tasks,
+.completed-tasks {
+  display: flex;
+  align-items: center;
+  gap: 0.5rem;
+}
+
+.created-tasks p,
+.completed-tasks p {
+  font: var(--font-subtitle);
+  color: var(--gray-500);
+}
+
+.created-tasks span {
+  color: var(--purple-dark);
+  background: var(--purple-light);
+
+  font: var(--font-tag);
+
+  padding: 0.25rem 0.5rem;
+  border-radius: 999px;
+}
+
+.completed-tasks span {
+  color: var(--green-dark);
+  background: var(--green-light);
+
+  font: var(--font-tag);
+
+  padding: 0.25rem 0.5rem;
+  border-radius: 999px;
+}
+
+.tasks-list {
+  display: flex;
+  flex-direction: column;
+  gap: 0.75rem;
+  padding-top: 1.5rem;
+}

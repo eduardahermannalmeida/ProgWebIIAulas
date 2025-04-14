@@ -1,4 +1,4 @@
-*{
+* {
   margin: 0;
   padding: 0;
   box-sizing: border-box;
@@ -24,18 +24,17 @@
 
   /* feedback */
   --danger: #c2464d;
+
+  /* tipografia */
   --default-font: "Inter", sans-serif;
 
-   /* tipografia */
-   --default-font: "Inter", sans-serif;
+  --font-input: 400 1rem/1.4 var(--default-font);
+  --font-button: 700 0.875rem/1.4 var(--default-font);
+  --font-subtitle: 600 0.875rem/1.2 var(--default-font);
+  --font-tag: 700 0.75rem/1.2 var(--default-font);
+  --font-text-md: 400 0.875rem/1.4 var(--default-font);
+  --font-text-sm: 400 0.75rem/1.4 var(--default-font);
 
-   --font-input: 400 1rem/1.4 var(--default-font);
-   --font-button: 700 0.875rem/1.4 var(--default-font);
-   --font-subtitle: 600 0.875rem/1.2 var(--default-font);
-   --font-tag: 700 0.75rem/1.2 var(--default-font);
-   --font-text-md: 400 0.875rem/1.4 var(--default-font);
-   --font-text-sm: 400 0.75rem/1.4 var(--default-font);
- 
-   --text-decoration-none: none;
-   --text-decoration-strike: line-through;
+  --text-decoration-none: none;
+  --text-decoration-strike: line-through;
 }

@@ -4,35 +4,37 @@ import "./styles.css";
 interface TaskProps {
   id: number;
   description: string;
+  completed: boolean;
   onDelete: (id: number) => void;
-  onUpdate: (id: number) => void;
+  onToggleComplete: (id: number, completed: boolean) => void;
 }
 
-export function Task({ id, description, onDelete, onUpdate }: TaskProps) {
+export function Task({
+  id,
+  description,
+  completed,
+  onDelete,
+  onToggleComplete,
+}: TaskProps) {
   return (
-
     <div className="task-container">
-      <p className="task-description">{description}</p>
-
       <input
         type="checkbox"
-        className="check-btn"
-        aria-label="Concluir tarefa"
-        title="Concluir"
-        onClick={() => onUpdate(id)}
+        checked={completed}
+        onChange={() => onToggleComplete(id, completed)}
       />
-
+      <p className={`task-description ${completed ? "completed" : ""}`}>
+        {description}
+      </p>
       <button
         type="button"
         className="delete-btn"
         aria-label="Excluir tarefa"
-        title="Excluir"
+        title="Exlcuir"
         onClick={() => onDelete(id)}
       >
         <Trash size={24} />
       </button>
-      
     </div>
-
   );
 }
